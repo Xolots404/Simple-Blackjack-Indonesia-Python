@@ -16,6 +16,7 @@ print('''
 list_kartu = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 def dealer():
+  random.shuffle(list_kartu)
   list_kartu_bot = list_kartu[:2]
   total_kartu_bot = sum(list_kartu_bot)
   print(f'kartu bot adalah {list_kartu_bot} dengan total {total_kartu_bot}')
